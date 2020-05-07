@@ -1,7 +1,7 @@
 import mysql.connector
 from mysql.connector import Error
 try:
-    connection = mysql.connector.connect(host='host number')
+    connection = mysql.connector.connect(host='host number',
                                          database='db number',
                                          user='username',
                                          password='password')#adding details of db
