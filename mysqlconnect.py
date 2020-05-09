@@ -15,3 +15,4 @@ try:
 
 except Error as e:
     print("Error while connecting to MySQL", e)
+connection.close()#to close the db!
