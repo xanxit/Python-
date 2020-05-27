@@ -1,7 +1,7 @@
 import mysql.connector#need to install using pip install mysql.connector
 from mysql.connector import Error
 try:
-    connection = mysql.connector.connect(host='host number',
+    connection = mysql.connector.connect(host='host number',#usually host number is the server number
                                          database='db number',
                                          user='username',
                                          password='password')#adding details of db
