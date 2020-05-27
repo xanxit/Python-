@@ -1,4 +1,4 @@
-import mysql.connector
+import mysql.connector#need to install using pip install mysql.connector
 from mysql.connector import Error
 try:
     connection = mysql.connector.connect(host='host number',
