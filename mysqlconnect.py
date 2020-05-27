@@ -8,7 +8,7 @@ try:
     if connection.is_connected():
         db_Info = connection.get_server_info()#geting information of db
         print("Connected to MySQL Server version ", db_Info)
-        cursor = connection.cursor()
+        cursor = connection.cursor()#creating a cursor for the db usage
         cursor.execute("select database();")
         record = cursor.fetchone()
         print("You're connected to database: ", record)
