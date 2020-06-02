@@ -1,4 +1,4 @@
-from gtts import gTTS 
+from gtts import gTTS #import the gTTS package
 import os 
 mytext = 'My Name is Sanchit'
 language = 'en'
