@@ -14,7 +14,7 @@ symptoms={'symptom':['Fever',
         'Nasal congestion',
         'Diarrhoea',
         'Haemoptysis',
-        'Conjunctival congestion'],'percentage':[85.9,70.7,38.1,33.4,18.6,14.8,13.9,13.6,14.4,9.0,4.8,3.7,0.9,0.8]}
+        'Conjunctival congestion'],'percentage':[85.9,70.7,38.1,33.4,18.6,14.8,13.9,13.6,14.4,9.0,4.8,3.7,0.9,0.8]}#plotting the tree map
 
 symptoms=pd.DataFrame(data=symptoms,index=range(14))
 symptoms
@@ -23,4 +23,4 @@ fig = px.treemap(symptoms, path=['symptom'], values='percentage',
                   color_continuous_scale='Rainbow')
 fig.show()
 import plotly.io as pio
-pio.write_html(fig, file='index.html', auto_open=True)
+pio.write_html(fig, file='index.html', auto_open=True)#It'll save the plot as an html file.
