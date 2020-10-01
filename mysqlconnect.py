@@ -13,6 +13,6 @@ try:
         record = cursor.fetchone()
         print("You're connected to database: ", record)
 
-except Error as e:
+except Error as e:#error
     print("Error while connecting to MySQL", e)
 connection.close()#to close the db!
